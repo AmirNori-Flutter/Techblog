@@ -15,10 +15,10 @@ class _splashScrrenState extends State<splashScrren> {
 
   @override
   void initState() {
-    Future.delayed(Duration(seconds: 3), () {
+    Future.delayed(Duration(seconds: 5), () {
       Navigator.of(
         context,
-      ).push(MaterialPageRoute(builder: (context) => Mainscrren()));
+      ).pushReplacement(MaterialPageRoute(builder: (context) => Mainscrren()));
     });
 
     super.initState();
